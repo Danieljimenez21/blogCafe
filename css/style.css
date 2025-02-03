@@ -3,17 +3,17 @@
     --fuenteParrafos: 'Open Sans', sans-serif;
 
     --primario: #784d3c;
-    --secundario:#ffffff;
+    --blanco:#ffffff;
     --negro: #000000;
 
 }
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 62.5%; /*1rem = 10*/
 }
 /**doble punto correguir si hay errores**/
-*, *::before, *::after{
+*, *:before, *:after{
     box-sizing: inherit;
 }
 body {
@@ -60,4 +60,19 @@ img {
 }
 .centrar-text {
     text-align: center;
+}
+
+/**header**/
+.header {
+    background-image: url(../img/banner.jpg) ;
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
 }
